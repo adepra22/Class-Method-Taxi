@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Class
 {
-
     public class Taxi
     {
         public string DriverName { get; set; }
@@ -17,7 +16,7 @@ namespace Class
         public void TaxiInfo()
         {
             Console.WriteLine("Driver Name         : {0}", DriverName);
-            if(OnDuty == true)
+            if (OnDuty == true)
             {
                 status = "Yes";
             }
@@ -39,24 +38,5 @@ namespace Class
             Console.WriteLine("{0} sedang mengantar penumpang", DriverName);
         }
 
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            Taxi taxi = new Taxi();
-
-            taxi.DriverName = "Jono";
-            taxi.OnDuty = true;
-            taxi.NumbOfPassenger = 10;
-
-            taxi.TaxiInfo();
-            taxi.PickUpPassenger();
-            taxi.DropOfPassenger();
-
-            Console.ReadKey();
-        }
     }
 }
