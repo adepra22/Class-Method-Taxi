@@ -29,13 +29,23 @@ namespace Class
             Console.WriteLine("Number of Passenger : {0}\n", NumbOfPassenger);
         }
 
+        public void PickUpPassenger()
+        {
+            Console.WriteLine("{0} sedang menjemput penumpang", DriverName);
+        }
+
+        public void DropOfPassenger()
+        {
+            Console.WriteLine("{0} sedang mengantar penumpang", DriverName);
+        }
+
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-     
+
         }
     }
 }
